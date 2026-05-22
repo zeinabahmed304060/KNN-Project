@@ -124,7 +124,7 @@ with col2:
     """, unsafe_allow_html=True)
 
     if st.button("Start Prediction"):
-        st.switch_page("pages/App.py")
+        st.switch_page("pages/prediction.py")
 
 with col3:
     st.markdown("""
