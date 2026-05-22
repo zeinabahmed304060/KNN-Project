@@ -1,0 +1,20 @@
+=== KNN From Scratch ===
+              precision    recall  f1-score   support
+
+           0       1.00      0.89      0.94        64
+           1       0.94      1.00      0.97       107
+
+    accuracy                           0.96       171
+   macro avg       0.97      0.95      0.96       171
+weighted avg       0.96      0.96      0.96       171
+
+
+=== Scikit-Learn KNN ===
+              precision    recall  f1-score   support
+
+           0       0.95      0.92      0.94        64
+           1       0.95      0.97      0.96       107
+
+    accuracy                           0.95       171
+   macro avg       0.95      0.95      0.95       171
+weighted avg       0.95      0.95      0.95       171
