@@ -1,3 +1,5 @@
+import os
+
 import streamlit as st
 import joblib
 
@@ -9,9 +11,13 @@ st.set_page_config(
 )
 
 # LOAD MODEL
-scaler = joblib.load(r"C:\Users\MF'\Downloads\Knn Project\models\scaler.pkl")
-model = joblib.load(r"C:\Users\MF'\Downloads\Knn Project\models\knn_sklearn.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+model = joblib.load(os.path.join(BASE_DIR, "models", "knn_sklearn.pkl"))
+
+scaler = joblib.load(os.path.join(BASE_DIR, "models", "scaler.pkl"))
+
+features = joblib.load(os.path.join(BASE_DIR, "models", "features.pkl"))
 # CSS
 st.markdown("""
 <style>
