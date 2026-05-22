@@ -129,7 +129,7 @@ with col2:
 with col3:
     st.markdown("""
     <div class='card'>
-        <div class='card-title'>📘 About KNN</div>
+        <div class='card-title'>📘 about KNN</div>
         <div class='card-text'>Learn how KNN works interactively</div>
     </div>
     """, unsafe_allow_html=True)
